@@ -1,0 +1,119 @@
+# Rust build artifacts
+# Exclude target directories in all project subdirectories
+**/target/
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Explicitly list all project target directories for clarity
+/a-hello-world/target/
+/b-hello-docker/target/
+/c-hello-alpine/target/
+/d-hello-scratch/target/
+/e-hello-wasm/target/
+/f-hello-wasm-docker/target/
+/g-hello-docker-runtime/target/
+/h-hello-nerdctl/target/
+/h-hello-nerdctl/runwasi/target/
+
+# WebAssembly build artifacts
+*.wasm
+*.wasm.d
+*.wat
+/pkg/
+*.wasm-pack
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+/build/
+/dist/
+/out/
+/coverage/
+*.o
+*.a
+
+# Dependency directories
+node_modules/
+**/node_modules/
+**/Cargo.lock
+
+# Debug files
+*.d
+*.pdb
+*.dll
+*.so
+*.dylib
+*.lib
+*.exp
+*.ilk
+
+# Executables
+**/target/debug/
+**/target/release/
+**/target/wasm32-unknown-unknown/
+
+# Documentation
+/target/doc/
+/docs/book/
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# Local development files
+*.local
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Test coverage
+/coverage/
+**/coverage/
+
+# Cargo build artifacts
+**/Cargo/target/
+**/target/wasm32-unknown-unknown/debug/
+**/target/wasm32-unknown-unknown/release/
+
+# wasm-pack
+/pkg/
+
+# Rust cache
+.rustc/
+.rustup/
+
+# npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/
+.yarnrc
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
